@@ -21,4 +21,11 @@ auto Subtract(double lhs, double rhs) -> double {
   }
   return lhs - rhs;
 }
+auto Multiply(double lhs, double rhs) -> double {
+  if (std::isnan(lhs) || std::isnan(rhs) || std::isinf(lhs) ||
+      std::isinf(rhs)) {
+    throw std::invalid_argument("lhs or rhs is nan or inf");
+  }
+  return lhs * rhs;
+}
 }  // namespace zozibush::math
