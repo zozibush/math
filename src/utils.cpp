@@ -28,4 +28,14 @@ auto Multiply(double lhs, double rhs) -> double {
   }
   return lhs * rhs;
 }
+auto Divide(double lhs, double rhs) -> double {
+  if (std::isnan(lhs) || std::isnan(rhs) || std::isinf(lhs) ||
+      std::isinf(rhs)) {
+    throw std::invalid_argument("lhs or rhs is nan or inf");
+  }
+  if(rhs==0.0){
+    throw std::invalid_argument("rhs is 0, don't divide 0.");
+  }
+  return lhs / rhs;
+}
 }  // namespace zozibush::math

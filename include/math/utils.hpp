@@ -8,5 +8,6 @@ namespace zozibush::math {
 auto Add(double lhs, double rhs) -> double;
 auto Subtract(double lhs, double rhs) -> double;
 auto Multiply(double lhs, double rhs) -> double;
+auto Divide(double lhs, double rhs) -> double;
 }  // namespace zozibush::math
 #endif  // ZOZIBUSH__MATH__UTILS_HPP_
