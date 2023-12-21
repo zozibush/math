@@ -4,14 +4,14 @@ set(SLASH "/")
 set(UNDER_BAR "_")
 
 set(${PROJECT_NAME}_${TEST_TYPE}_SOURCE_FILES
-
+  utils
   # ! Add source files here
 )
 
 function(add_test_executable EXECUTABLE_NAME SOURCE_FILES)
   add_executable(${EXECUTABLE_NAME}
 
-    #${SOURCE_FILES}.cpp
+    ${SOURCE_FILES}.cpp
     main.cpp
   )
   target_link_libraries(${EXECUTABLE_NAME} PRIVATE
