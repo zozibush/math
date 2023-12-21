@@ -4,5 +4,7 @@
 #ifndef ZOZIBUSH__MATH__UTILS_HPP_
 #define ZOZIBUSH__MATH__UTILS_HPP_
 
-namespace zozibush::math {}  // namespace zozibush::math
+namespace zozibush::math {
+auto Add(double lhs, double rhs) -> double;
+}  // namespace zozibush::math
 #endif  // ZOZIBUSH__MATH__UTILS_HPP_
